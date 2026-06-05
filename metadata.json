@@ -1,0 +1,6 @@
+{
+  "name": "AI Document Organizer & Sorter",
+  "description": "An intelligent full-stack document assistant that automatically categorizes texts, creates skill matrices and learning roadmaps, and lets you optionally offload actionable items to an AI agent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
