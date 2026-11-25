@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# DocGnosis
 
-# Run and deploy your AI Studio app
+A proactive full-stack AI document suite that categorizes texts, builds skill matrices and learning roadmaps, and supports offloading actionable tasks through a server-side Gemini API backend.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/99146650-bce5-44f7-b32b-be488430d8a0
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS v4, Motion, Lucide icons
+- **Backend:** Express (server.ts) + @google/genai with exponential-backoff retry handling
 
-## Run Locally
+## Local Setup
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js 20+ and a Google Gemini API key.
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   `ash
+   npm install
+   `
+2. Copy .env.example to .env and add your API key:
+   `env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   `
+3. Run in development mode:
+   `ash
+   npm run dev
+   `
+4. Build and run for production:
+   `ash
+   npm run build
+   npm start
+   `
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
